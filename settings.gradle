@@ -1,0 +1,3 @@
+include ':androidtools'
+include ':app'
+rootProject.name = "QeAndroidTools"
