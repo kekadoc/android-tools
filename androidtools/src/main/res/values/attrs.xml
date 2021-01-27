@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="size" format="enum">
+        <enum name="extra_small" value="-2"/>
+        <enum name="small" value="-1"/>
+        <enum name="medium" value="0"/>
+        <enum name="large" value="1"/>
+        <enum name="extra_large" value="2"/>
+    </attr>
+</resources>

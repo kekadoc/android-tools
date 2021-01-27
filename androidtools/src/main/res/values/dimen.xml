@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="unit_dp">1dp</dimen>
+    <dimen name="unit_sp">1sp</dimen>
+
+    <dimen name="size_icon_extra_small">6dp</dimen>
+    <dimen name="size_icon_small">12dp</dimen>
+    <dimen name="size_icon_medium">24dp</dimen>
+    <dimen name="size_icon_large">36dp</dimen>
+    <dimen name="size_icon_extra_large">48dp</dimen>
+
+
+    <dimen name="size_touch_target_min">48dp</dimen>
+    <dimen name="size_touch_target_medium">56dp</dimen>
+    <dimen name="size_touch_target_large">72dp</dimen>
+
+    <dimen name="text_size_title_extra_small">12sp</dimen>
+    <dimen name="text_size_title_small">16sp</dimen>
+    <dimen name="text_size_title_medium">20sp</dimen>
+    <dimen name="text_size_title_large">24sp</dimen>
+    <dimen name="text_size_title_extra_large">28sp</dimen>
+
+    <dimen name="text_size_subtitle_extra_small">12sp</dimen>
+    <dimen name="text_size_subtitle_small">14sp</dimen>
+    <dimen name="text_size_subtitle_medium">18sp</dimen>
+    <dimen name="text_size_subtitle_large">22sp</dimen>
+    <dimen name="text_size_subtitle_extra_large">24sp</dimen>
+
+    <dimen name="text_size_extra_small">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+
+
+    <dimen name="material_elevation_nav_drawer">16dp</dimen>
+    <dimen name="material_elevation_app_bar">4dp</dimen>
+    <dimen name="material_elevation_fab">6dp</dimen>
+    <dimen name="material_elevation_dialog">24dp</dimen>
+
+</resources>

@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceCircle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!--region RatingBar -->
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar"/>
+    <style name="RatingBar.OnPrimary">
+        <item name="colorControlNormal">@color/White</item>
+        <item name="colorControlActivated">@color/Red</item>
+    </style>
+    <!--endregion-->
+
+    <!--region Appearance -->
+    <style name="TextAppearance">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <!--region Primary -->
+    <style name="TextAppearance.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+    <style name="TextAppearance.Primary.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.Primary.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.Primary.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Primary.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.Primary.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Primary.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Primary.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.Primary.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.Primary.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Primary.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.Primary.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Primary.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Primary.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.Primary.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.Primary.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Primary.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.Primary.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region Secondary -->
+    <style name="TextAppearance.Secondary">
+        <item name="android:textColor">?attr/colorSecondary</item>
+    </style>
+    <style name="TextAppearance.Secondary.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.Secondary.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.Secondary.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Secondary.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.Secondary.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Secondary.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Secondary.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.Secondary.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.Secondary.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Secondary.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.Secondary.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Secondary.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Secondary.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.Secondary.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.Secondary.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Secondary.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.Secondary.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region Error -->
+    <style name="TextAppearance.Error">
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+    <style name="TextAppearance.Error.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.Error.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.Error.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Error.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.Error.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Error.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Error.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.Error.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.Error.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Error.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.Error.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Error.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Error.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.Error.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.Error.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Error.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.Error.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region Surface -->
+    <style name="TextAppearance.Surface">
+        <item name="android:textColor">?attr/colorSurface</item>
+    </style>
+    <style name="TextAppearance.Surface.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.Surface.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.Surface.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Surface.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.Surface.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Surface.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Surface.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.Surface.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.Surface.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Surface.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.Surface.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Surface.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Surface.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.Surface.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.Surface.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Surface.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.Surface.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region Accent -->
+    <style name="TextAppearance.Accent">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+    <style name="TextAppearance.Accent.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.Accent.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.Accent.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Accent.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.Accent.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Accent.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Accent.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.Accent.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.Accent.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.Accent.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.Accent.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.Accent.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Accent.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.Accent.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.Accent.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.Accent.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.Accent.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+
+    <!--region OnPrimary -->
+    <style name="TextAppearance.OnPrimary">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnPrimary.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnPrimary.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.OnPrimary.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region OnSurface -->
+    <style name="TextAppearance.OnSurface">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.OnSurface.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.OnSurface.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnSurface.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnSurface.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.OnSurface.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region OnSecondary -->
+    <style name="TextAppearance.OnSecondary">
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnSecondary.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnSecondary.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.OnSecondary.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region OnError -->
+    <style name="TextAppearance.OnError">
+        <item name="android:textColor">?attr/colorOnError</item>
+    </style>
+    <style name="TextAppearance.OnError.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnError.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.OnError.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.OnError.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.OnError.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnError.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnError.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnError.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.OnError.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnError.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.OnError.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnError.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnError.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnError.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.OnError.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnError.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.OnError.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+    <!--region OnBackground -->
+    <style name="TextAppearance.OnBackground">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+    <style name="TextAppearance.OnBackground.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextAppearance.OnBackground.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnBackground.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Title.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_title_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Title.Small">
+        <item name="android:textSize">@dimen/text_size_title_small</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Title.Medium">
+        <item name="android:textSize">@dimen/text_size_title_medium</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Title.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_title_extra_large</item>
+    </style>
+
+    <style name="TextAppearance.OnBackground.Subtitle">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Subtitle.ExtraSmall">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_small</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Subtitle.Small">
+        <item name="android:textSize">@dimen/text_size_subtitle_small</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Subtitle.Medium">
+        <item name="android:textSize">@dimen/text_size_subtitle_medium</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Subtitle.Large">
+        <item name="android:textSize">@dimen/text_size_subtitle_large</item>
+    </style>
+    <style name="TextAppearance.OnBackground.Subtitle.ExtraLarge">
+        <item name="android:textSize">@dimen/text_size_subtitle_extra_large</item>
+    </style>
+    <!--endregion-->
+
+    <!--endregion-->
+
+    <!--region MaterialTextView -->
+    <style name="style_MaterialTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:gravity">center|start|center_vertical|left</item>
+    </style>
+    <!--region OnPrimary -->
+    <style name="style_MaterialTextView.OnPrimary" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:gravity">center|start|center_vertical|left</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.Title">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnPrimary.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnPrimary.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnPrimary.Title.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region OnSecondary -->
+    <style name="style_MaterialTextView.OnSecondary">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.Title">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSecondary.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnSecondary.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnSecondary.Title.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region OnSurface -->
+    <style name="style_MaterialTextView.OnSurface">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.Title">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnSurface.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnSurface.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnSurface.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region OnError -->
+    <style name="style_MaterialTextView.OnError">
+        <item name="android:textAppearance">@style/TextAppearance.OnError</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.Title">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnError.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnError.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnError.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region OnBackground -->
+    <style name="style_MaterialTextView.OnBackground">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.Title">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.OnBackground.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.OnBackground.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.OnBackground.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+
+    <!--region Primary -->
+    <style name="style_MaterialTextView.Primary">
+        <item name="android:textAppearance">@style/TextAppearance.Primary</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.Title">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.Primary.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Primary.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Primary.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region Secondary -->
+    <style name="style_MaterialTextView.Secondary">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.Title">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.Secondary.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Secondary.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Secondary.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region Error -->
+    <style name="style_MaterialTextView.Error">
+        <item name="android:textAppearance">@style/TextAppearance.Error</item>
+    </style>
+    <style name="style_MaterialTextView.Error.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Error.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Error.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Error.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.Error.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.Error.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.Title">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.Error.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Error.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Error.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region Surface -->
+    <style name="style_MaterialTextView.Surface">
+        <item name="android:textAppearance">@style/TextAppearance.Surface</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.Title">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.Surface.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Surface.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Surface.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+    <!--region Accent -->
+    <style name="style_MaterialTextView.Accent">
+        <item name="android:textAppearance">@style/TextAppearance.Accent</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.SingleLine" >
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.ExtraSmall.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Medium.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Large.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.ExtraLarge</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.ExtraLarge.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.AutoSize">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_extra_large</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeStepGranularity">5sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.AutoSize.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.Title">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Title</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Title.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Title.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Title.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Title.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Title.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Title.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Title.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Title.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Title.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Title.ExtraLarge</item>
+    </style>
+
+    <style name="style_MaterialTextView.Accent.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Subtitle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Subtitle.ExtraSmall">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Subtitle.ExtraSmall</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Subtitle.Small">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Subtitle.Small</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Subtitle.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Subtitle.Medium</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Subtitle.Large">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Subtitle.Large</item>
+    </style>
+    <style name="style_MaterialTextView.Accent.Subtitle.ExtraLarge">
+        <item name="android:textAppearance">@style/TextAppearance.Accent.Subtitle.ExtraLarge</item>
+    </style>
+    <!--endregion-->
+
+    <style name="style_MaterialTextView.Help" parent="style_MaterialTextView">
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <!--endregion-->
+
+</resources>
