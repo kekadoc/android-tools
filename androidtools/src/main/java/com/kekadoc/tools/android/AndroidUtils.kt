@@ -25,11 +25,6 @@ import java.util.*
 object AndroidUtils {
     private const val TAG = "AndroidUtils-TAG"
 
-    @JvmStatic
-    fun View.test() {
-
-    }
-
     fun getDefaultExpandableListGroupIndicator(context: Context): Drawable? {
         val drawable: Drawable?
         val expandableListViewStyle =
@@ -183,24 +178,21 @@ object AndroidUtils {
         return colors
     }
 
-    @Dimension
     @Px
+    @Dimension
     @JvmStatic fun getThemeDimension(context: Context, defValue: Int, @AttrRes attrDimen: Int): Float {
         return getThemeDimensions(context, floatArrayOf(defValue.toFloat()), attrDimen)[0]
     }
 
-    @Dimension
     @Px
+    @Dimension
     @JvmStatic fun getThemeDimension(context: Context, @AttrRes attrDimen: Int): Float {
         return getThemeDimensions(context, attrDimen)[0]
     }
 
-    @Dimension
     @Px
-    @JvmStatic fun getThemeDimensions(
-        context: Context,
-        @StyleableRes @AttrRes vararg attrDimen: Int
-    ): FloatArray {
+    @Dimension
+    @JvmStatic fun getThemeDimensions(context: Context, @StyleableRes @AttrRes vararg attrDimen: Int): FloatArray {
         val a = context.theme.obtainStyledAttributes(attrDimen)
         val dimens = FloatArray(attrDimen.size)
         for (i in 0 until attrDimen.size) {
@@ -210,16 +202,13 @@ object AndroidUtils {
         return dimens
     }
 
-    @Dimension
     @Px
-    @JvmStatic fun getThemeDimensions(
-        context: Context,
-        defValues: FloatArray,
-        @StyleableRes @AttrRes vararg attrDimen: Int
-    ): FloatArray {
+    @Dimension
+    @JvmStatic fun getThemeDimensions(context: Context, defValues: FloatArray,
+                                      @StyleableRes @AttrRes vararg attrDimen: Int): FloatArray {
         val a = context.theme.obtainStyledAttributes(attrDimen)
         val dimens = FloatArray(attrDimen.size)
-        for (i in 0 until attrDimen.size) {
+        for (i in attrDimen.indices) {
             dimens[i] = a.getDimension(i, defValues[i])
         }
         a.recycle()
@@ -250,9 +239,8 @@ object AndroidUtils {
         return ResourcesCompat.getDrawable(context.resources, res, context.theme)
     }
     @JvmStatic fun getDrawables(context: Context, @DrawableRes vararg res: Int): Array<Drawable?> {
-        if (res == null) return arrayOfNulls(0)
         val drawables = arrayOfNulls<Drawable>(res.size)
-        for (i in 0 until res.size) drawables[i] = getDrawable(context, res[i])
+        for (i in res.indices) drawables[i] = getDrawable(context, res[i])
         return drawables
     }
     @JvmStatic fun getDimension(context: Context, @DimenRes res: Int): Float {
