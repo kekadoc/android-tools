@@ -3,6 +3,7 @@ package com.kekadoc.tools.android.example
 import android.annotation.SuppressLint
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.Rect
 import android.graphics.drawable.*
 import android.os.Bundle
 import android.util.Log
@@ -20,7 +21,6 @@ import com.kekadoc.tools.android.dpToPx
 import com.kekadoc.tools.android.lifecycle.onLifecycle
 import com.kekadoc.tools.android.view.*
 import com.kekadoc.tools.android.view.ViewUtils.findAllViews
-import com.kekadoc.tools.android.view.recyclerview.SpacesItemDecoration
 import com.kekadoc.tools.data.state.StateKeeper
 import com.kekadoc.tools.data.state.dataStatesCollector
 import com.kekadoc.tools.observer.Observing
@@ -256,6 +256,22 @@ enum class Colors(val color: Int) {
             BLACK -> WHITE
             WHITE -> RED
         }
+    }
+
+}
+
+class SpacesItemDecoration(private val left: Int = 0,
+                           private val top: Int = 0,
+                           private val right: Int = 0,
+                           private val bottom: Int = 0) : RecyclerView.ItemDecoration() {
+
+    override fun getItemOffsets(
+        outRect: Rect,
+        view: View,
+        parent: RecyclerView,
+        state: RecyclerView.State
+    ) {
+        outRect.set(left, top, right, bottom)
     }
 
 }
