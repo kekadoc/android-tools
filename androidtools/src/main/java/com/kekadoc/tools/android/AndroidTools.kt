@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 fun Context.dpToPx(dp: Float) = AndroidUtils.dpToPx(this, dp)
 fun Context.spToPx(dp: Float) = AndroidUtils.spToPx(this,dp)
 fun Context.color(@ColorRes res: Int) = AndroidUtils.getColor(this, res)
-fun Context.drawable(@ColorRes res: Int) = AndroidUtils.getDrawable(this, res)
+fun Context.drawable(@DrawableRes res: Int) = AndroidUtils.getDrawable(this, res)
 fun Context.dimen(@DimenRes res: Int) = AndroidUtils.getDimension(this, res)
 fun Context.value(@DimenRes res: Int) = AndroidUtils.getValue(this, res)
 fun Context.text(res: Int) = AndroidUtils.getText(this, res)

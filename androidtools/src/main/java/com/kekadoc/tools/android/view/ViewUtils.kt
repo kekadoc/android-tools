@@ -38,7 +38,7 @@ object ViewUtils {
                     val id: Int =
                             Objects.requireNonNull(item.getAnnotation(ViewById::class.java)).id
                     val access = item.isAccessible
-                    item.isAccessible = access
+                    item.isAccessible = true
                     try {
                         item[fields] = findViewById(id)
                     } catch (e: IllegalAccessException) {
@@ -172,13 +172,13 @@ object ViewUtils {
         })
     }
 
-    @JvmStatic fun View.getMargin(side: Square.Side): Int {
+    @JvmStatic fun View.getMargin(side: Square.Edge): Int {
         val lp = layoutParams as? MarginLayoutParams ?: return 0
         return when (side) {
-            Square.Side.LEFT -> lp.leftMargin
-            Square.Side.TOP -> lp.topMargin
-            Square.Side.RIGHT -> lp.rightMargin
-            Square.Side.BOTTOM -> lp.bottomMargin
+            Square.Edge.LEFT -> lp.leftMargin
+            Square.Edge.TOP -> lp.topMargin
+            Square.Edge.RIGHT -> lp.rightMargin
+            Square.Edge.BOTTOM -> lp.bottomMargin
             else -> 0
         }
     }
