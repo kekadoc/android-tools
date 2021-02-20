@@ -5,6 +5,9 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+import com.kekadoc.tools.android.R;
+import com.kekadoc.tools.android.view.ViewUtilsKt;
+
 public class SwipeDetector implements View.OnTouchListener, OnSwipeListener {
     private static final String TAG = "SwipeDetector-TAG";
 

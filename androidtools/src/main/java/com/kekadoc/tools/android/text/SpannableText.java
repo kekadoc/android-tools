@@ -22,7 +22,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
 import com.kekadoc.tools.ObjectUtils;
-import com.kekadoc.tools.character.Chars;
+import com.kekadoc.tools.character.CharUtils;
 import com.kekadoc.tools.exeption.Wtf;
 import com.kekadoc.tools.android.AndroidUtils;
 
@@ -263,11 +263,11 @@ public class SpannableText implements Spannable {
 
     protected void applySpan_size(@NonNull Spannable text, @NonNull Region region) {
         String val = region.getValue();
-        if (!Chars.isNumber(val.charAt(0))) throw new Wtf();
+        if (!CharUtils.isNumber(val.charAt(0))) throw new Wtf();
         int s = 0;
         boolean dp = false;
         for (int i = 0; i < val.length(); i++) {
-            if (!Chars.isNumber(val.charAt(i))) {
+            if (!CharUtils.isNumber(val.charAt(i))) {
                 s = Integer.parseInt(val.substring(0, i));
                 CharSequence last = val.subSequence(val.length() - 2, val.length());
                 if (last.equals("dp") || last.equals("sp")) dp = true;
@@ -341,7 +341,7 @@ public class SpannableText implements Spannable {
                 if (sequence.charAt(i + POSITION_TYPE_MARK) != MARK_TYPE) continue;
                 char type = sequence.charAt(i + POSITION_TYPE);
                 if (sequence.charAt(i + POSITION_CODE_MARK) != MARK_CODE) continue;
-                int code = Chars.parseNumber(sequence, i + POSITION_CODE_MARK);
+                int code = CharUtils.parseNumber(sequence, i + POSITION_CODE_MARK);
                 for (int j = i + POSITION_CODE; j < sequence.length(); j++) {
                     if (sequence.charAt(j) == MARK_END) {
                         markerFinder.onMarkerFind(sequence, o, i, sequence.subSequence(i, j + 1), type, code);
@@ -381,9 +381,9 @@ public class SpannableText implements Spannable {
 
         CharSequence format = region.subSequence(sequence);
         if (format.charAt(0) != '%') throw new Wtf("Not correct format");
-        if (Chars.isNumber(format.charAt(1))) {
+        if (CharUtils.isNumber(format.charAt(1))) {
             int number = Integer.parseInt(Character.toString(format.charAt(1)));
-            if (Chars.isNumber(format.charAt(2))) throw new Wtf("Число должен быть меньще 10!");
+            if (CharUtils.isNumber(format.charAt(2))) throw new Wtf("Число должен быть меньще 10!");
             if (paths == null) throw new Wtf("Args not found");
             region.setPath(paths.get(number - 1));
         }

@@ -1,6 +1,7 @@
 package com.kekadoc.tools.android.example
 
 import android.annotation.SuppressLint
+import android.app.DownloadManager
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.Rect
@@ -17,8 +18,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
+import com.kekadoc.tools.android.AndroidUtils
+import com.kekadoc.tools.android.ThemeColor
 import com.kekadoc.tools.android.dpToPx
 import com.kekadoc.tools.android.lifecycle.onLifecycle
+import com.kekadoc.tools.android.log.log
+import com.kekadoc.tools.android.themeColor
 import com.kekadoc.tools.android.view.*
 import com.kekadoc.tools.android.view.ViewUtils.findAllViews
 import com.kekadoc.tools.data.state.StateKeeper
@@ -89,7 +94,43 @@ class MainActivity : AppCompatActivity() {
         val data = arrayListOf<Message>()
         for (i in 0..20) data.add(Message("Message #$i"))
 
-        adapter.submitList(data)
+        adapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
+            override fun onChanged() {
+                AndroidUtils.isUiThread().log().e(tag = TAG, msg = "OnChange")
+            }
+
+            override fun onItemRangeChanged(positionStart: Int, itemCount: Int) {
+                super.onItemRangeChanged(positionStart, itemCount)
+                Log.e(TAG, "onItemRangeChanged: ")
+            }
+
+            override fun onItemRangeChanged(positionStart: Int, itemCount: Int, payload: Any?) {
+                super.onItemRangeChanged(positionStart, itemCount, payload)
+                Log.e(TAG, "onItemRangeChanged: ")
+            }
+
+            override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
+                super.onItemRangeInserted(positionStart, itemCount)
+                Log.e(TAG, "onItemRangeInserted: " + AndroidUtils.isUiThread())
+            }
+
+            override fun onItemRangeRemoved(positionStart: Int, itemCount: Int) {
+                super.onItemRangeRemoved(positionStart, itemCount)
+                Log.e(TAG, "onItemRangeRemoved: ")
+            }
+
+            override fun onItemRangeMoved(fromPosition: Int, toPosition: Int, itemCount: Int) {
+                super.onItemRangeMoved(fromPosition, toPosition, itemCount)
+                Log.e(TAG, "onItemRangeMoved: ")
+            }
+        })
+
+        Thread {
+            AndroidUtils.isUiThread().log().e(tag = TAG, msg = "Thread ")
+            adapter.submitList(data)
+        }.start()
+
+        themeColor(ThemeColor.RIPPLE)
 
         recyclerView.adapter = adapter
         recyclerView.addItemDecoration(
@@ -104,8 +145,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private class VH(itemView: TextView) : RecyclerView.ViewHolder(itemView) {
-
-
 
         var data: StateKeeper<Message, Colors>? = null
         var observing: Observing? = null
@@ -131,7 +170,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         fun invokeAction() {
-            Log.e(TAG, "invokeAction: $data")
             data?.let {
                 it.state = it.state.getNext()
             }
@@ -184,7 +222,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         private val messageStates = dataStatesCollector<Message, Colors>() { keeper, oldState, newState ->
-            Log.e(TAG, "onStateChange $keeper old: $oldState new: $newState")
+            //Log.e(TAG, "onStateChange $keeper old: $oldState new: $newState")
         }
 
         override fun onCurrentListChanged(

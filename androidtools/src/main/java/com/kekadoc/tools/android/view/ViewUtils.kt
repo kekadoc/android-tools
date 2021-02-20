@@ -1,7 +1,6 @@
 package com.kekadoc.tools.android.view
 
 import android.app.Activity
-import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Build
 import android.util.Log
@@ -17,15 +16,28 @@ import androidx.core.view.marginBottom
 import androidx.core.view.marginLeft
 import androidx.core.view.marginRight
 import androidx.core.view.marginTop
-import com.kekadoc.tools.annotations.Coefficient
 import com.kekadoc.tools.fraction.Fraction
 import com.kekadoc.tools.reflection.ReflectionUtils
 import com.kekadoc.tools.shape.square.Square
 import com.kekadoc.tools.storage.Iteration
 import com.kekadoc.tools.text.CharSequenceUtils.createSequence
 import com.kekadoc.tools.android.AndroidUtils
+import com.kekadoc.tools.android.ThemeColor
+import com.kekadoc.tools.android.annotation.FractionValue
 import java.lang.reflect.Field
 import java.util.*
+
+fun View.dpToPx(dp: Float) = AndroidUtils.dpToPx(context, dp)
+fun View.spToPx(dp: Float) = AndroidUtils.spToPx(context,dp)
+fun View.color(@ColorRes res: Int) = AndroidUtils.getColor(context, res)
+fun View.drawable(@DrawableRes res: Int) = AndroidUtils.getDrawable(context, res)
+fun View.dimen(@DimenRes res: Int) = AndroidUtils.getDimension(context, res)
+fun View.value(@DimenRes res: Int) = AndroidUtils.getValue(context, res)
+fun View.text(res: Int) = AndroidUtils.getText(context, res)
+fun View.string(@StringRes res: Int) = AndroidUtils.getString(context, res)
+fun View.themeColor(@StyleableRes @AttrRes attrColor: Int) = AndroidUtils.getThemeColor(context, attrColor)
+fun View.themeColor(themeColor: ThemeColor) = AndroidUtils.getThemeColor(context, themeColor)
+fun View.themeDimen(@AttrRes attrDimen: Int) = AndroidUtils.getThemeDimension(context, attrDimen)
 
 object ViewUtils {
     private const val TAG: String = "ViewUtils-TAG"
@@ -140,13 +152,13 @@ object ViewUtils {
         return viewX <= x && x <= viewXEnd && viewY <= y && y <= viewYEnd
     }
 
-    @JvmStatic fun ProgressBar.setProgress(@Coefficient k: Float): Int {
+    @JvmStatic fun ProgressBar.setProgress(@FractionValue k: Float): Int {
         val p = (max * k).toInt()
         progress = p
         return p
     }
     @RequiresApi(Build.VERSION_CODES.N)
-    @JvmStatic fun ProgressBar.setProgress(@Coefficient k: Float, animate: Boolean): Int {
+    @JvmStatic fun ProgressBar.setProgress(@FractionValue k: Float, animate: Boolean): Int {
         val p = (max * k).toInt()
         setProgress(p, animate)
         return p
@@ -206,25 +218,6 @@ object ViewUtils {
     @JvmStatic fun View.setPadding(padding: Int) {
         setPadding(padding, padding, padding, padding)
     }
-
-
-    @JvmStatic fun View.dpToPx(dp: Float) : Float = AndroidUtils.dpToPx(context, dp)
-    @JvmStatic fun View.string(@StringRes res: Int): String? {
-        return if (res == 0) null else context.getString(res)
-    }
-    @JvmStatic fun View.drawable(@DrawableRes res: Int): Drawable? {
-        return if (res == 0) null else AndroidUtils.getDrawable(context, res)
-    }
-    @JvmStatic fun View.dimen(@DimenRes res: Int): Float {
-        return if (res == 0) 0f else context.resources.getDimension(res)
-    }
-    @JvmStatic fun View.color(@ColorRes res: Int): Int {
-        return if (res == 0) Color.TRANSPARENT else AndroidUtils.getColor(context, res)
-    }
-    @JvmStatic fun View.stringArray(@ArrayRes res: Int): Array<String?>? {
-        return if (res == 0) null else context.resources.getStringArray(res)
-    }
-
 
     @JvmStatic fun View.show() {
         visibility = View.VISIBLE
