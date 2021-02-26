@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.res.Resources
+import android.content.res.TypedArray
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.Drawable
@@ -24,6 +25,26 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import java.util.*
 
+internal fun <T> Context.obtainStyledAttributes(obtain: StyledAttributes.() -> T): T {
+    return obtain.invoke(StyledAttributes(this))
+}
+internal class StyledAttributes(private val context: Context) {
+
+    fun <T> obtainAttrs(attrs: IntArray, result: StyledAttributes.(attr: TypedArray) -> T): T {
+        val ta = context.obtainStyledAttributes(attrs)
+        val t = result.invoke(this, ta)
+        ta.recycle()
+        return t
+    }
+    fun <T> obtainAttrs(resId: Int, attrs: IntArray, result: StyledAttributes.(attr: TypedArray) -> T): T {
+        val ta = context.obtainStyledAttributes(resId, attrs)
+        val t = result.invoke(this, ta)
+        ta.recycle()
+        return t
+    }
+
+}
+
 fun Context.dpToPx(dp: Float) = AndroidUtils.dpToPx(this, dp)
 fun Context.spToPx(dp: Float) = AndroidUtils.spToPx(this,dp)
 fun Context.color(@ColorRes res: Int) = AndroidUtils.getColor(this, res)
@@ -38,28 +59,6 @@ fun Context.stringArray(@ArrayRes res: Int): Array<String?>? {
 fun Context.themeColor(@StyleableRes @AttrRes attrColor: Int) = AndroidUtils.getThemeColor(this, attrColor)
 fun Context.themeColor(themeColor: ThemeColor) = AndroidUtils.getThemeColor(this, themeColor)
 fun Context.themeDimen(@AttrRes attrDimen: Int) = AndroidUtils.getThemeDimension(this, attrDimen)
-
-
-/** String  */
-fun Fragment.string(@StringRes res: Int): String? {
-    return if (res == 0) null else requireContext().getString(res)
-}
-/** Drawable  */
-fun Fragment.drawable(@DrawableRes res: Int): Drawable? {
-    return if (res == 0) null else AndroidUtils.getDrawable(requireContext(), res)
-}
-/** Dimen  */
-fun Fragment.dimen(@DimenRes res: Int): Float {
-    return if (res == 0) 0f else requireContext().resources.getDimension(res)
-}
-/** Color  */
-fun Fragment.color(@ColorRes res: Int): Int {
-    return if (res == 0) Color.TRANSPARENT else AndroidUtils.getColor(requireContext(), res)
-}
-/** Strings  */
-fun Fragment.stringArray(@ArrayRes res: Int): Array<String?>? {
-    return if (res == 0) null else requireContext().resources.getStringArray(res)
-}
 
 object AndroidUtils {
     private const val TAG = "AndroidUtils-TAG"
