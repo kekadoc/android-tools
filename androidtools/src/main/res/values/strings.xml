@@ -1,5 +1,4 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">QeAndroidTools</string>
+<resources>
 
     <string name="next">Next</string>
     <string name="back">Back</string>
@@ -33,47 +32,5 @@
     <string name="hash">#</string>
     <string name="hex_max">FFFFFF</string>
     <string name="hex_min">000000</string>
-
-    <!--
-
-        size
-        style
-        subscript
-        superscript
-        appearance
-        typeface
-        bgcolor
-        fgcolor
-        strikethrough
-        Underline
-
-    -->
-    <string name="test_annotation_size">This <annotation size="14sp">another size</annotation> text.</string>
-    <string name="test_annotation_style">This <annotation style="bold">another style</annotation> text.</string>
-    <string name="test_annotation_subscript">This <annotation subscript="">another subscript</annotation> text.</string>
-    <string name="test_annotation_superscript">This <annotation superscript="">another superscript</annotation> text.</string>
-    <string name="test_annotation_bgcolor">This <annotation bgcolor="#FF00FF00">another bgcolor</annotation> text.</string>
-    <string name="test_annotation_fgcolor">This <annotation fgcolor="#FF00FF00">another fgcolor</annotation> text.</string>
-    <string name="test_annotation_strikethrough">This <annotation strikethrough="">another strikethrough</annotation> text.</string>
-    <string name="test_annotation_underline">This <annotation underline="">another underline</annotation> text.</string>
-    <string name="test_annotation_format">This format <annotation format="">%1$f</annotation> text.</string>
-
-
-    <string name="xliff_test">Test Xliff: <xliff:g id="xliff">%1$s</xliff:g>. This wab be Xliff</string>
-    <string name="span_test_0">I like a <annotation id="span" example="Span">%s</annotation>.</string>
-
-    <string name="span_test_1">Best practices for <annotation format="">%1$f</annotation> on Android. <annotation format="">%2$f</annotation></string>
-    <string name="span_test_2">
-        <annotation underline="" strikethrough="">
-            <annotation format="">%3$.2f</annotation> Best practices <annotation size="20sp">for <annotation format="">%1$f</annotation> on  Android</annotation>. <annotation format="">%2$f</annotation>
-        </annotation>
-    </string>
-    <string name="string_spannable_test">
-        <annotation underline="" size="20sp">
-            This example <annotation fgcolor="#FFFF0000" size="24sp">SpannableResText.class</annotation>
-            <annotation strikethrough="">Strikethrough</annotation>
-            Next String.format: <annotation format="">%1$.2f</annotation>
-        </annotation>
-    </string>
 
 </resources>

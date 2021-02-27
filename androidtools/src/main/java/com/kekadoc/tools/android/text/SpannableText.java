@@ -36,7 +36,6 @@ import java.util.Objects;
  * Класс для работы с Spannable текстом из ресурса.
  * Для работы передается String ресурс помеченный специальными аннотациями
  * @see Annotation
- * @see com.kekadoc.tools.android.R.string.string_spannable_test Example
  *
  */
 public class SpannableText implements Spannable {
