@@ -33,4 +33,6 @@
     <string name="hex_max">FFFFFF</string>
     <string name="hex_min">000000</string>
 
+    <string name="content_description_confirm">Confirm</string>
+
 </resources>

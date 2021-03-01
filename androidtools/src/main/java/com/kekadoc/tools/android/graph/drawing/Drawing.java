@@ -9,7 +9,4 @@ public abstract class Drawing {
 
     public abstract void draw(@NonNull Canvas canvas);
 
-    @NonNull
-    protected abstract RectF getBound();
-
 }

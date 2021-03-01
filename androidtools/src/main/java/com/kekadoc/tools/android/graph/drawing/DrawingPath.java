@@ -9,7 +9,4 @@ public abstract class DrawingPath {
 
     public abstract void draw(@NonNull Path path);
 
-    @NonNull
-    protected abstract RectF getBound();
-
 }
