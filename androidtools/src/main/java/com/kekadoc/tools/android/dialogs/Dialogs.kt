@@ -2,8 +2,8 @@ package com.kekadoc.tools.android.dialogs
 
 import android.app.Dialog
 import androidx.fragment.app.DialogFragment
-import com.kekadoc.tools.observer.ObserverManagement
-import com.kekadoc.tools.observer.Observing
+import com.kekadoc.tools.observable.ObservationManager
+import com.kekadoc.tools.observable.Observing
 import java.util.*
 
 fun Dialog.observe(observer: DialogManagement.Observer): Observing {
@@ -31,7 +31,7 @@ interface DialogManagement {
 
         fun addDialogObserver(observer: Observer): Observing
 
-        class Management : ObserverManagement<Observer>(), Observer {
+        class Management : ObservationManager<Observer>(), Observer {
             override fun onDialogShow(dialog: Dialog) {
                 getIterationObservers().forEach {
                     it.onDialogShow(dialog)
@@ -78,7 +78,7 @@ interface DialogFragmentManagement {
     interface Observable {
         fun addDialogFragmentObserver(observer: Observer): Observing
 
-        class Management : ObserverManagement<Observer>(), Observer {
+        class Management : ObservationManager<Observer>(), Observer {
             override fun onDialogFragmentShow(dialog: DialogFragment) {
                 getIterationObservers().forEach {
                     it.onDialogFragmentShow(dialog)

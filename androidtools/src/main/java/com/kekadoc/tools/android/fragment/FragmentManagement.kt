@@ -1,8 +1,8 @@
 package com.kekadoc.tools.android.fragment
 
 import androidx.fragment.app.Fragment
-import com.kekadoc.tools.observer.ObserverManagement
-import com.kekadoc.tools.observer.Observing
+import com.kekadoc.tools.observable.ObservationManager
+import com.kekadoc.tools.observable.Observing
 
 /**
  * FragmentManagement
@@ -13,7 +13,7 @@ interface FragmentManagement {
 
         fun addFragmentObserver(observer: Observer): Observing
 
-        class Management : ObserverManagement<Observer>(), Observer {
+        class Management : ObservationManager<Observer>(), Observer {
             override fun onFragmentAttached(fragment: Fragment) {
                 getIterationObservers().forEach {
                     it.onFragmentAttached(fragment)

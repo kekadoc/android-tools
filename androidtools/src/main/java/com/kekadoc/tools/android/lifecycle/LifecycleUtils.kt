@@ -4,7 +4,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.kekadoc.tools.observer.Observing
+import com.kekadoc.tools.observable.Observing
 
 fun Lifecycle.addObserving(observer: LifecycleObserver): Observing {
     addObserver(observer)

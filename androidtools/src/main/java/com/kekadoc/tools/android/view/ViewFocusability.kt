@@ -3,8 +3,8 @@ package com.kekadoc.tools.android.view
 import android.view.View
 import com.kekadoc.tools.data.state.DataStatesCollector
 import com.kekadoc.tools.data.state.StateKeeper
-import com.kekadoc.tools.observer.ObserverManagement
-import com.kekadoc.tools.observer.Observing
+import com.kekadoc.tools.observable.ObservationManager
+import com.kekadoc.tools.observable.Observing
 
 open class ViewFocusability<V : View> : DataStatesCollector<V, ViewFocusability.State, ViewFocusability<V>.StateView>() {
 
@@ -44,7 +44,7 @@ open class ViewFocusability<V : View> : DataStatesCollector<V, ViewFocusability.
 
     }
 
-    private inner class Observers : ObserverManagement<Observer<V>>(), Observer<V> {
+    private inner class Observers : ObservationManager<Observer<V>>(), Observer<V> {
 
         private var lastStage = GeneralState.UNFOCUSED
 

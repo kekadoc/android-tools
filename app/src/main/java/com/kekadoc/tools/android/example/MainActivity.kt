@@ -1,7 +1,6 @@
 package com.kekadoc.tools.android.example
 
 import android.annotation.SuppressLint
-import android.app.DownloadManager
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.Rect
@@ -28,14 +27,14 @@ import com.kekadoc.tools.android.view.*
 import com.kekadoc.tools.android.view.ViewUtils.findAllViews
 import com.kekadoc.tools.data.state.StateKeeper
 import com.kekadoc.tools.data.state.dataStatesCollector
-import com.kekadoc.tools.observer.ObservableData
-import com.kekadoc.tools.observer.Observing
+import com.kekadoc.tools.observable.Observing
 
 @SuppressLint("NonConstantResourceId")
 class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val TAG: String = "MainActivity-TAG"
+
     }
 
     @ViewById(id = R.id.view_0)
@@ -52,7 +51,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findAllViews()
-
         view0.background = RippleDrawable(ColorStateList.valueOf(Color.GREEN), ColorDrawable(Color.BLUE), null)
         view1.background = RippleDrawable(ColorStateList.valueOf(Color.GREEN), ColorDrawable(Color.BLUE), null)
         view2.background = RippleDrawable(ColorStateList.valueOf(Color.GREEN), ColorDrawable(Color.BLUE), null)
