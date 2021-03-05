@@ -3,7 +3,6 @@ package com.kekadoc.tools.android.graph.drawing
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.RectF
-import com.kekadoc.tools.android.graph.drawing.Drawing
 
 open class DrawingCircle(var bounds: RectF = RectF(), var paint: Paint) : Drawing() {
 
