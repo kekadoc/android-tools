@@ -1,4 +1,4 @@
-package com.kekadoc.tools.android.bindable
+package com.kekadoc.tools.android.databinding
 
 import com.kekadoc.tools.android.AndroidUtils.getDrawable
 import androidx.databinding.BindingAdapter

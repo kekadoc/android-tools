@@ -1,4 +1,4 @@
-package com.kekadoc.tools.android.livedata
+package com.kekadoc.tools.android.lifecycle
 
 import androidx.lifecycle.MutableLiveData
 

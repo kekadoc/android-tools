@@ -1,4 +1,4 @@
-package com.kekadoc.tools.android.dialogs
+package com.kekadoc.tools.android.dialog
 
 import android.app.Dialog
 import androidx.fragment.app.DialogFragment

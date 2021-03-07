@@ -8,20 +8,20 @@ import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.kekadoc.tools.android.view.ViewUtils.setProgress
 import com.kekadoc.tools.ui.content.Content
 
-open class ContentView <V : View> (val view: V, shown: Boolean = true) : Content.SimpleInstance(shown) {
+open class ContentView <V : View?> (var view: V, shown: Boolean = true) : Content.SimpleInstance(shown) {
 
     override fun onHide() {
-        view.isVisible = false
+        view?.isVisible = false
     }
     override fun onShown() {
-        view.isVisible = true
+        view?.isVisible = true
     }
 
     override fun toString(): String {
         return super.toString() + "view: " + view
     }
 
-    class Observable <V : View>(view: V, shown: Boolean = true, var observer: Content.Observer? = null) : ContentView<V>(view, shown) {
+    class Observable <V : View?>(view: V, shown: Boolean = true, var observer: Content.Observer? = null) : ContentView<V>(view, shown) {
         override fun onHide() {
             super.onHide()
             observer?.onHide()
@@ -33,17 +33,18 @@ open class ContentView <V : View> (val view: V, shown: Boolean = true) : Content
     }
 
 }
-open class ContentProgressBar <V : ProgressBar> (val view: V, shown: Boolean = true) : Content.Progress.SimpleInstance(shown) {
+
+open class ContentProgressBar <V : ProgressBar?> (var view: V, shown: Boolean = true) : Content.Progress.SimpleInstance(shown) {
 
     override fun onProgress(old: Double, progress: Double) {
-        view.setProgress(progress.toFloat())
+        view?.setProgress(progress.toFloat())
     }
 
     override fun onHide() {
-        view.isVisible = false
+        view?.isVisible = false
     }
     override fun onShown() {
-        view.isVisible = true
+        view?.isVisible = true
     }
 
     class Observable <V : ProgressBar>(view: V,
@@ -61,30 +62,20 @@ open class ContentProgressBar <V : ProgressBar> (val view: V, shown: Boolean = t
     }
 
 }
-open class ContentProgressIndicator <Indicator : BaseProgressIndicator<*>> (
+
+open class ContentProgressIndicator <Indicator : BaseProgressIndicator<*>?> (
     indicator: Indicator, shown: Boolean = true)
     : ContentProgressBar<Indicator>(indicator, shown) {
 
     override fun onProgress(old: Double, progress: Double) {
         super.onProgress(old, progress)
-        view.isIndeterminate = progress <= 0.0
+        view?.isIndeterminate = progress <= 0.0
     }
     override fun onHide() {
-        view.hide()
+        view?.hide()
     }
     override fun onShown() {
-        view.show()
+        view?.show()
     }
 
 }
-
-
-fun <T : View> T.toContentUI(shown: Boolean = true) = ContentView(this, shown)
-fun <T : View> T.toContentUI(shown: Boolean = true, observer: Content.Observer? = null) =
-    ContentView.Observable(this, shown, observer)
-
-fun <T : ProgressBar> T.toContentUI(shown: Boolean = true) = ContentProgressBar(this)
-fun <T : ProgressBar> T.toContentUI(shown: Boolean = true, observer: Content.Observer? = null) =
-    ContentProgressBar.Observable(this, shown, observer)
-
-fun <Indicator : BaseProgressIndicator<*>> Indicator.toContentUI(shown: Boolean = true) = ContentProgressIndicator(this, shown)
