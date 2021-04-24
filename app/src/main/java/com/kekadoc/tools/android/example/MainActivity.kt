@@ -28,6 +28,8 @@ import com.kekadoc.tools.android.view.ViewUtils.findAllViews
 import com.kekadoc.tools.data.state.StateKeeper
 import com.kekadoc.tools.data.state.dataStatesCollector
 import com.kekadoc.tools.observable.Observing
+import com.kekadoc.tools.observable.SingleObservableData.Companion.toSingleObservable
+import com.kekadoc.tools.observable.onEach
 
 @SuppressLint("NonConstantResourceId")
 class MainActivity : AppCompatActivity() {
@@ -50,6 +52,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         findAllViews()
         view0.background = RippleDrawable(ColorStateList.valueOf(Color.GREEN), ColorDrawable(Color.BLUE), null)
         view1.background = RippleDrawable(ColorStateList.valueOf(Color.GREEN), ColorDrawable(Color.BLUE), null)
